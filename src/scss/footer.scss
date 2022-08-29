@@ -1,0 +1,201 @@
+//====================================================================================================
+.footer {
+    background-color: #081130;
+    margin-top: rem(30);
+    @include adaptiveValue("padding-bottom", 80, 30);
+    // .footer__container
+
+    &__img {
+        position: relative;
+        z-index: 2;
+        img {
+            width: 100%;
+        }
+    }
+    &__container {
+    }
+
+    // .footer__form
+
+    &__form {
+        background: #ffffff;
+        border-radius: rem(8);
+        text-align: center;
+        @include adaptiveValue("padding-top", 70, 30);
+        @include adaptiveValue("padding-bottom", 70, 30);
+        @include adaptiveValue("padding-left", 150, 30, 1920, 992, 1);
+        @include adaptiveValue("padding-right", 150, 30, 1920, 992, 1);
+        position: relative;
+    }
+    &__berry {
+        display: none;
+        @media (min-width: $tablet) {
+            display: block;
+            position: absolute;
+        }
+        @media (max-width: rem(1450)) {
+            transform: scale(80%);
+        }
+        @media (max-width: rem(1380)) {
+            transform: scale(50%);
+        }
+    }
+    .berry-1 {
+        bottom: 0;
+        left: 0;
+        transform: translate(-50%, 50%);
+    }
+    .berry-2 {
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+    .berry-3 {
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+    .berry-4 {
+        bottom: 0;
+        right: 0;
+        transform: translate(50%, 50%);
+    }
+
+    // .footer__links
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: rem(30);
+        font-size: rem(12);
+        line-height: 150%;
+        color: #7e868e;
+        @include adaptiveValue("margin-top", 80, 30);
+        @media (max-width:$mobile){
+            gap: rem(20);  
+        }
+    }
+
+    // .footer__link
+
+    &__link {
+        &:not(:last-child) {
+            // border-right: 1px solid #7e868e;
+        }
+        @media (any-hover: hover){
+            &:hover{
+                text-decoration: underline;
+                color: #fff;
+            }
+        }
+    }
+
+    // .footer__copy
+
+    &__copy {
+        font-size: rem(12);
+        line-height: 150%;
+        text-align: center;
+        color: #7e868e;
+        margin-top: rem(24);
+    }
+}
+.footer-form {
+    // .portfolio__title
+
+    &__title {
+        font-weight: 700;
+        @include adaptiveValue("font-size", 36, 24);
+        line-height: 133%;
+    }
+
+    // .portfolio__subtitle
+
+    &__subtitle {
+        @include adaptiveValue("font-size", 21, 18);
+        line-height: 143%;
+        letter-spacing: -0.2px;
+    }
+    &__form {
+        margin-top: rem(30);
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(20);
+        @media (min-width: $mobile) {
+            justify-content: center;
+        }
+        @media (max-width:$mobile){
+            flex-direction: column;
+        }
+    }
+    &__input-block {
+        position: relative;
+    }
+    &__input {
+        cursor: text;
+        @media (min-width:$tablet){
+            width: rem(380);
+        }
+        @media (max-width:$tablet){
+            width: rem(250);
+        }
+        @media (max-width:$mobile){
+            width: 100%;
+        }
+    }
+    &__label {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        left: rem(30);
+        cursor: text;
+        &::before{
+            color: #929AA2;
+            font-size: rem(14);
+        }
+    }
+    &__button {
+        @media (min-width:$tablet){
+            width: rem(380);
+        }
+        @media (max-width:$tablet){
+            width: rem(250);
+        }
+        @media (max-width:$mobile){
+            width: 100%;
+        }
+    }
+}
+
+.checkbox {
+    flex: 0 1 100%;
+    min-height: rem(24);
+    margin-top: rem(24);
+    // .checkbox__input
+
+    &__input {
+    }
+
+    // .checkbox__label
+
+    &__label {
+        a {
+            text-decoration: underline;
+            @media (any-hover: hover){
+                &:hover{
+                    color: #4a94ff;
+                }
+            }
+        }
+    }
+
+    // .checkbox__text
+
+    &__text {
+    }
+}
+
+//====================================================================================================

@@ -1,0 +1,42 @@
+<footer class="footer">
+	<div class="footer__img">
+		<img src="@img/order/bg-01.png" alt="Капкейк по эскизу">
+	</div>	
+	<div class="footer__container">
+		<div class="footer__form footer-form">
+			<div class="footer__berry berry-1"><img src="@img/footer/berry-1.svg" alt="Berry"></div>
+			<div class="footer__berry berry-2"><img src="@img/footer/leaf-1.svg" alt="Berry"></div>
+			<div class="footer__berry berry-3"><img src="@img/footer/berry-2.svg" alt="Berry"></div>
+			<div class="footer__berry berry-4"><img src="@img/footer/leaf-2.svg" alt="Berry"></div>
+			<h2 class="footer-form__title">
+				Чтобы сделать заказ, укажите ваш телефон
+			</h2>
+			<h3 class="footer-form__subtitle">
+				Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания
+			</h3>
+			<form action="files/sendmail/sendmail.php" method="POST" class="footer-form__form" data-validate>	
+				<div class="footer-form__input-block">
+					<label for="phone" class="footer-form__label _icon-phone"></label>
+					<input id="phone" type="tel" name="form[email]" data-required="tel" data-error="Введен не номер телефона" placeholder="Номер телефона" class="footer-form__input input">
+				</div>
+				<button type="submit" class="footer-form__button button">Сделать заказ</button>
+				<div class="checkbox">
+					<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+					<label for="c_1" class="checkbox__label"><span class="checkbox__text">Нажамая на кнопку, вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></span></label>
+				</div>
+			</form>
+		</div>
+		<div class="footer__links">
+			<div class="footer__link">
+				<a href="#">Согласие на обработку данных</a>
+			</div>
+			<div class="footer__link">
+				<a href="#">Служба поддержки</a>
+			</div>
+			<div class="footer__link">
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+		</div>
+		<div class="footer__copy">© nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000</div>
+	</div>
+</footer>
